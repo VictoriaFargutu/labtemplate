@@ -1,4 +1,171 @@
-/* You can add global styles to this file, and also import other style files */
-body{
-  padding-top: 40px;
+.container-fluid {
+    margin: 30px;
+    padding: 1px;
+    height: auto;
+    width: auto;
+}
+
+.col-lg-3 {
+    padding: 1px;
+}
+
+.col-lg-4 {
+    padding: 1px;
+}
+
+.col-lg-6 {
+    padding: 1px;
+}
+
+
+.row {
+    margin: 1px;
+}
+
+.imagesStyle {
+    opacity: 0.3;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    text-align: center;
+    margin-top: 55px;
+    max-width: 100%;
+}
+
+.imageStyleNorthAmerica {
+    width: 300px;
+    height: 320px;
+}
+
+.imageStyleSouthAmerica {
+    width: 300px;
+    height: 290px;
+}
+
+.imageStyleEurope {
+    width: 385px;
+    height: 260px;
+}
+
+.imageStyleAsia {
+    width: 690px;
+    height: 320px;
+}
+
+.imageStyleAfrica {
+    width: 385px;
+    height: 350px;
+    margin-top: -2px;
+}
+
+.imageStyleAustralia {
+    width: 470px;
+    height: 290px;
+}
+
+.imageStyleAntarctica {
+    width: 220px;
+    height: 290px;
+}
+
+
+.imagesContainer {
+    text-align: center;
+    display: inline-block;
+}
+
+.imagesContainerNorthAmerica {
+    width: 300px;
+    height: 320px;
+}
+
+.imagesContainerSouthAmerica {
+
+    width: 300px;
+    height: 290px;
+}
+
+.imagesContainerEurope {
+    width: 385px;
+    height: 260px;
+}
+
+.imagesContainerAsia {
+    width: 690px;
+    height: 320px;
+}
+
+.imagesContainerAfrica {
+    width: 385px;
+    height: 350px;
+    margin-top: -2px;
+}
+
+.imagesContainerAustralia {
+    width: 470px;
+    height: 290px;
+}
+
+.imagesContainerAntarctica {
+    width: 220px;
+    height: 290px;
+}
+
+.textStyle {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2b616d;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.textStyleAfrica {
+    top: 45%;
+}
+
+.openLink {
+    transition: .10s ease;
+    opacity: 0;
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    font-size: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #2b616d;
+}
+
+.openLinkAfrica {
+    top: 35%;
+}
+
+
+.imagesContainer:hover .imagesStyle {
+    opacity: 1;
+}
+
+.imagesContainer:hover .textStyle {
+    opacity: 0;
+}
+
+.imagesContainer:hover .openLink {
+    opacity: 1;
+}
+
+footer {
+    border-top: 3px solid #2b616d;
+    color: #FA8D62;
+    font-weight: bold;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
 }

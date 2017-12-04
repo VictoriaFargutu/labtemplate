@@ -103,6 +103,7 @@
 .imagesContainerAustralia {
     width: 470px;
     height: 290px;
+    margin-left: -40px;
 }
 
 .imagesContainerAntarctica {

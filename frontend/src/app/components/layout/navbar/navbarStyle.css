@@ -1,0 +1,16 @@
+.navbar-text{
+    font-size: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.navbar-default .navbar-text {
+    font-weight: bold;
+    color: #FA8D62;
+}
+
+.navbar {
+
+    background-color: #2b616d;
+    border-bottom: 2px solid #2b616d;
+}

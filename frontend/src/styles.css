@@ -1,5 +1,8 @@
 .container-fluid {
-    margin: 30px;
+    margin-top: -20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
     padding: 1px;
     height: auto;
     width: auto;
@@ -58,12 +61,13 @@
 }
 
 .imageStyleAustralia {
-    width: 470px;
+    width: 345px;
     height: 290px;
 }
 
 .imageStyleAntarctica {
-    width: 220px;
+    
+    width: 345px;
     height: 290px;
 }
 
@@ -101,13 +105,14 @@
 }
 
 .imagesContainerAustralia {
-    width: 470px;
+    width: 345px;
     height: 290px;
-    margin-left: -40px;
+    /*margin-left: -20px;*/
 }
 
 .imagesContainerAntarctica {
-    width: 220px;
+    /*margin-left: -18px;*/
+    width: 345px;
     height: 290px;
 }
 

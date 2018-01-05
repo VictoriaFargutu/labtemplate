@@ -1,18 +1,18 @@
 {
   "development": {
     "username": "postgres",
-    "password": null,
-    "database": "devdb",
-    "host": "127.0.0.1",
-    "port": 32768,
+    "password": "bestplaces",
+    "database": "BestWorldPlaces",
+    "host": "localhost",
+    "port": 5432,
     "dialect": "postgres"
   },
   "production": {
     "username": "postgres",
-    "password": null,
-    "database": "devdb",
-    "host": "127.0.0.1",
-    "port": 32768,
+    "password": "bestplaces",
+    "database": "BestWorldPlaces",
+    "host": "localhost",
+    "port": 5432,
     "dialect": "postgres"
   }
 }

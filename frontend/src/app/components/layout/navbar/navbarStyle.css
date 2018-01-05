@@ -10,7 +10,18 @@
 }
 
 .navbar {
-
     background-color: #2b616d;
     border-bottom: 2px solid #2b616d;
+}
+
+.searchStyle{
+    background: #fff;
+    color: #2b616d;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #2b616d;
+}
+
+button:hover{
+    border-left: solid 1px #ccc;
+    cursor: pointer;
 }

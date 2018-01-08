@@ -1,17 +1,12 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "bestplaces",
-    "database": "BestWorldPlaces",
-    "host": "localhost",
-    "port": 5432,
-    "dialect": "postgres"
+    "use_env_variable": "DATABASE_URL"
   },
   "production": {
-    "username": "postgres",
-    "password": "bestplaces",
-    "database": "BestWorldPlaces",
-    "host": "localhost",
+    "username": "dtwrvnkl",
+    "password": "rCePUYs9KvibX6F0ecA5_CDYJbIGkI7Q",
+    "database": "dtwrvnkl",
+    "host": "dumbo.db.elephantsql.com",
     "port": 5432,
     "dialect": "postgres"
   }

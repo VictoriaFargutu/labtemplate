@@ -1,6 +1,11 @@
 {
   "development": {
-    "use_env_variable": "DATABASE_URL"
+    "username": "dtwrvnkl",
+    "password": "rCePUYs9KvibX6F0ecA5_CDYJbIGkI7Q",
+    "database": "dtwrvnkl",
+    "host": "dumbo.db.elephantsql.com",
+    "port": 5432,
+    "dialect": "postgres"
   },
   "production": {
     "username": "dtwrvnkl",

@@ -1,0 +1,107 @@
+
+
+
+
+
+
+
+footer{
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+.btn-primary{
+    background-color: darkorange;
+}
+
+.register{
+    background-color: brown;
+    height: 100px;
+}
+
+.imagesContainer{
+    
+    border: 5px;
+    text-align: center; 
+    margin-left: 150px;  
+    margin-top: 50px;
+     
+}
+
+div.container {
+    width: 100%;
+    border: 0px solid gray;
+    height:900px;
+    padding-top: 100px;
+}
+
+
+
+nav {
+    float: left;
+    max-width: 500px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 500px;
+    
+}
+   
+nav ul a {
+    text-decoration: none;
+   
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+
+form{
+    
+    width: 200px;
+}
+
+.col-md-3{
+
+    text-align: center;
+
+}
+
+.form-horizontal{
+    
+    margin-left: 150px;
+    text-align: center;
+    width: 400px;
+}
+
+.register_btn{
+    background-color: darkorange;
+}
+
+.control-label{
+    padding-top: 0.8em;
+}
+
+.help-block{
+font-size: 0.8em;
+}
+
+
+
+
+
+
+
+
+

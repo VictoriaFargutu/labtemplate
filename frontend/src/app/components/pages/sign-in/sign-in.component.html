@@ -1,3 +1,123 @@
-<p>
-  sign-in works!
-</p>
+<div class="container">
+    <nav>
+        <ul>
+
+
+            <div class="col-md-3 col-lg-3 imagesContainer">
+
+                <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+                    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" name="username" placeholder="John_spider" [(ngModel)]="model.username" #username="ngModel" required />
+                        <div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>
+                    </div>
+                    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="password" placeholder="*********" [(ngModel)]="model.password" #password="ngModel" required />
+                        <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+                    </div>
+                    <div class="form-group">
+                        <button [disabled]="loading" class="btn btn-primary">Login</button>
+                        <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="
+                        />
+
+
+                    </div>
+                </form>
+            </div>
+
+
+        </ul>
+    </nav>
+
+    <article>
+
+        <form class="form-horizontal" action='' method="POST">
+            <fieldset>
+
+                <div class="control-group">
+                    <!-- First Name -->
+                    <label class="control-label" for="firstname">First Name</label>
+                    <div class="controls">
+
+                        <input type="text" class="form-control" name="firstname" placeholder="John" [(ngModel)]="model.fisrtname" #firstname="ngModel" required />
+                        <div *ngIf="f.submitted && !firstname.valid" class="help-block">First name is required</div>
+                        
+                    </div>
+                </div>
+
+                <div class="control-group">
+                        <!-- Last Name -->
+                        <label class="control-label"  for="lastname">Last Name</label>
+                        <div class="controls">
+                         
+                          <input type="text" class="form-control" name="lastname" placeholder="Doe" [(ngModel)]="model.lastname" #lastname="ngModel" required />
+                          <div *ngIf="f.submitted && !lastname.valid" class="help-block">Last Name is required</div>
+                          
+                        </div>
+                      </div>
+
+                <div class="control-group username">
+                    <!-- Username -->
+                    <label class="control-label" for="username">Username</label>
+                    <div class="controls">
+
+                        <input type="text" class="form-control" name="username" placeholder="John_spider" [(ngModel)]="model.username" #username="ngModel" required />
+                        <div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>
+                        <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <!-- E-mail -->
+                    <label class="control-label" for="email">E-mail</label>
+                    <div class="controls">
+                        <input type="text" class="form-control" name="email"placeholder="John@gmail.com" [(ngModel)]="model.email" #email="ngModel" required />
+                        <div *ngIf="f.submitted && !email.valid" class="help-block">E-mail is required</div>
+                        
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <!-- Password-->
+                    <label class="control-label" for="password">Password</label>
+                    <div class="controls">
+                        <input type="password" class="form-control" name="password" placeholder="*********" [(ngModel)]="model.password" #password="ngModel" required />
+                        <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+                        <p class="help-block">Password should be at least 4 characters</p>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <!-- Password Confirmation -->
+                    <label class="control-label" for="passwordconfirm">Password (Confirm)</label>
+                    <div class="controls">
+                        <input type="password" class="form-control" name="passwordconfirm" placeholder="*********" [(ngModel)]="model.passwordconfirm" #passwordconfirm="ngModel" required
+                        />
+                        <div *ngIf="f.submitted && !passwordconfirm.valid" class="help-block">Passwords don't match</div>
+                        
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <!-- Button -->
+                    <div class="controls">
+                        <button class="btn btn-success register_btn">Register</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+    </article>
+
+
+
+</div>
+
+
+
+
+
+<footer>
+    <p>© 2017 Brasov</p>
+</footer>

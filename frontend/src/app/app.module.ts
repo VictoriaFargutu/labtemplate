@@ -29,14 +29,16 @@ import { AsiaComponent } from './components/pages/asia/asia.component';
 import { AntarcticaComponent } from './components/pages/antarctica/antarctica.component';
 import { SignInComponent } from './components/pages/sign-in/sign-in.component';
 import { EuropeComponent } from './components/pages/europe/europe.component';
+import { ProfileComponent } from './components/pages/profile/profile.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent, 
-	ContactComponent, NorthAmericaComponent, SouthAmericaComponent, AfricaComponent, AustraliaComponent, AboutComponent, AsiaComponent, AntarcticaComponent, SignInComponent, EuropeComponent
-  ],
+	ContactComponent, NorthAmericaComponent, SouthAmericaComponent, AfricaComponent, AustraliaComponent, AboutComponent, AsiaComponent, AntarcticaComponent, SignInComponent, EuropeComponent, ProfileComponent ],
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,

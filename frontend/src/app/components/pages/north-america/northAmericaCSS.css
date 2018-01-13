@@ -1,58 +1,18 @@
-.nav-tabs>li.active>a,
-.nav-tabs>li.active>a:focus,
-.nav-tabs>li.active>a:hover {
-    color: #2b616d;
-}
-
-#sidebar-wrapper {
-    margin-left: -10px;
+.sidebar{
+    visibility: visible;
+    height: 680px !important;
     width: 290px;
+    position: relative;
+    margin-top: 20px !important;
     background: #2b616d;
-    position: absolute;
-    height: 700px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    /*z-index: 1;*/
-    /*transition: all 0.4s ease 0s;*/
 }
 
-.iconFloat {
-    float: right;
-    cursor: pointer;
-}
+a {
+    color: #FFF;
+} 
 
-.nav-tabs>li.countries>a {
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
-}
-
-.sidebarRow {
-    margin-top: 40px;
-}
-
-.tabs-left>li {
-    float: none;
-    margin-bottom: 2px;
-    margin-right: -2px;
-    margin-left: -2px;
-}
-
-.tabs-left>li.active>a,
-.tabs-left>li.active>a:hover,
-.tabs-left>li.active>a:focus {
-    border-bottom-color: #ddd;
-    border-right-color: transparent;
-}
-
-.tabs-left>li>a {
-    border-radius: 0 0 0 0;
-    /*margin-right: 0;*/
-    /*display:block;*/
-}
-
-
-.tabs-left>li>a:hover {
-    background-color: #2b616d;
+.countries {
+    font-size: 20px;
 }
 
 .alignText {
@@ -61,24 +21,9 @@
     font-size: 20px;
 }
 
-.aColor a {
-    color: #FFF;
-}
-
-.countries {
-    font-size: 20px;
-}
-
-.imageContent {
-    width: 100%;
-    height: 150px;
-    /*padding: 3px;*/
-    position: relative;
-}
-
-.imageContentBig {
-    width: 100%;
-    height: 200px;
-    margin-top: 10px;
-}
-
+.tabs-left>li {
+    float: none;
+    margin-bottom: 2px;
+    margin-right: -2px;
+    margin-left: -2px;
+    }

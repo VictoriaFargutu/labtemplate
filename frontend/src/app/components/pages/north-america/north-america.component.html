@@ -1,11 +1,25 @@
-       <div class="container-fluid">
-        <div class="row sidebarRow">
-            <div class="col-lg-3 col-xs-3">
-                <div id="sidebar-wrapper">
-                    <!-- required for floating -->
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs tabs-left sidebar-nav aColor">
-                        <li class="countries"><a>Canada<span id="spanID" class="glyphicon glyphicon-menu-hamburger iconFloat" data-toggle="collapse" data-target="#canadaPlaces"></span></a></li>
+<div class="sidebar sidebar-left">
+  <div class="scrollable">
+    <h1 class="scrollable-header countries aColor"><a>Canada<span id="spanID" class="glyphicon glyphicon-menu-hamburger iconFloat" data-toggle="collapse" data-target="#canadaPlaces"></span></a></h1>  
+
+      <div class="list-group" ui-turn-off='uiSidebarLeft'>
+        <a href="#home" data-toggle="tab">Athabasca Glacier</a>
+                            <a href="#profile" data-toggle="tab">Crowsnest Pass</a>
+                            <a href="#messages" data-toggle="tab">Sandbanks Provincial Park</a>
+                            <a href="#settings" data-toggle="tab">Banff National Park</a>
+                            <a href="#settings" data-toggle="tab">Banff National Park</a>
+                            <a href="#settings" data-toggle="tab">Banff National Park</a>
+                            <a href="#settings" data-toggle="tab">Banff National Park</a>
+          
+        <a class="list-group-item" href="#/link2">Link 2
+          <i class="fa fa-chevron-right pull-right"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- <sui-sidebar class="ui left vertical visible sidebar menu">
+
+<li class="countries aColor"><a>Canada<span id="spanID" class="glyphicon glyphicon-menu-hamburger iconFloat" data-toggle="collapse" data-target="#canadaPlaces"></span></a></li>
                         <ul id="canadaPlaces" class="nav nav-tabs tabs-left sidebar-nav aColor collapse in">
                             <li class="active"><a href="#home" data-toggle="tab">Athabasca Glacier</a></li>
                             <li><a href="#profile" data-toggle="tab">Crowsnest Pass</a></li>
@@ -15,7 +29,7 @@
                             <li><a href="#settings" data-toggle="tab">Banff National Park</a></li>
                             <li><a href="#settings" data-toggle="tab">Banff National Park</a></li>
                         </ul>
-                        <li class="countries"><a>USA<span class="glyphicon glyphicon-menu-hamburger iconFloat"  data-toggle="collapse" data-target="#usaPlaces"></span></a></li>
+                        <li class="countries aColor"><a>USA<span class="glyphicon glyphicon-menu-hamburger iconFloat"  data-toggle="collapse" data-target="#usaPlaces"></span></a></li>
                         <ul id="usaPlaces" class="nav nav-tabs tabs-left sidebar-nav aColor collapse">
                             <li><a href="#home" data-toggle="tab"> Canyonlands National Park</a></li>
                             <li><a href="#profile" data-toggle="tab">Horseshoe Bend</a></li>
@@ -29,7 +43,7 @@
                             <li><a href="#settings" data-toggle="tab">Watkins Glen State Park</a></li>
                             <li><a href="#settings" data-toggle="tab"></a></li>
                         </ul>
-                        <li class="countries"><a>Mexico<span class="glyphicon glyphicon-menu-hamburger iconFloat"  data-toggle="collapse" data-target="#mexicoPlaces"></span></a></li>
+                        <li class="countries aColor"><a>Mexico<span class="glyphicon glyphicon-menu-hamburger iconFloat"  data-toggle="collapse" data-target="#mexicoPlaces"></span></a></li>
                         <ul id="mexicoPlaces" class="nav nav-tabs tabs-left sidebar-nav aColor collapse">
                             <li><a href="#home" data-toggle="tab">Sima de las Cotorras</a></li>
                             <li><a href="#profile" data-toggle="tab">Tamul Falls</a></li>
@@ -39,40 +53,5 @@
                             <li><a href="#settings" data-toggle="tab">Banff National Park</a></li>
                             <li><a href="#settings" data-toggle="tab">Banff National Park</a></li>
                         </ul>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-9 col-md-9 col-xs-9 columnsPadding">
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div class="tab-pane active" id="home">
-                        <div class="row">
-                            <div class="col-lg-3 col-xs-3 ">
-                                <img class="img-responsive imageContent" src="‪..\..\assets\semantic\themes\default\assets\images\NorthAmerica.jpg">
-                            </div>
-                            <div class="col-lg-3 col-xs-3 ">
-                                <img class="img-responsive imageContent" src="‪..\..\assets\semantic\themes\default\assets\images\NorthAmerica.jpg">
-                            </div>
-                            <div class="col-lg-3 col-xs-3 ">
-                                <img class="img-responsive imageContent" src="‪..\..\assets\semantic\themes\default\assets\images\NorthAmerica.jpg">
-                                <!--   <img class="img-responsive imageContent" src="E:\Facultate\an3\WEB\images\Africa.jpg"> -->
-                            </div>
-                            <div class="col-lg-3 col-xs-3 ">
-                                <img class="img-responsive imageContent" src="‪..\..\assets\semantic\themes\default\assets\images\NorthAmerica.jpg">
-                                <!--   <img class="img-responsive imageContent" src="E:\Facultate\an3\WEB\images\Africa.jpg"> -->
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-9 col-xs-9">
-                                <img class="img-responsive imageContent" src="‪..\..\assets\semantic\themes\default\assets\images\NorthAmerica.jpg">
-                                <!--   <img class="img-responsive imageContent" src="E:\Facultate\an3\WEB\images\Africa.jpg"> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="profile">Profile Tab.</div>
-                    <div class="tab-pane" id="messages">Messages Tab.</div>
-                    <div class="tab-pane" id="settings">Settings Tab.</div>
-                </div>
-            </div>
-        </div>
-    </div>
+</sui-sidebar>
+       -->

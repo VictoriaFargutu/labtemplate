@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-north-america',
   templateUrl: './north-america.component.html',
-  styleUrls: ['./north-america.component.less']
+  styleUrls: ['./northAmericaCSS.css']
 })
 export class NorthAmericaComponent implements OnInit {
 

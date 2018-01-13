@@ -1,7 +1,8 @@
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent, NavbarComponent, ContactComponent, AboutComponent, SignInComponent,ProfileComponent} from './components';
+import { HomeComponent, NavbarComponent, ContactComponent, AboutComponent, SignInComponent,ProfileComponent, NorthAmericaComponent} from './components';
+
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
@@ -20,9 +21,10 @@ const routes: Routes = [
   {
 	  path: 'profile', component: ProfileComponent
   },
- 
-  
-  
+   {
+    path: 'northAmerica', component: NorthAmericaComponent
+  }
+
   // otherwise redirect to home
   // { path: '**', redirectTo: '/' }
 ];

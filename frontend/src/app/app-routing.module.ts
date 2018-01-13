@@ -1,7 +1,7 @@
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent, NavbarComponent, ContactComponent, AboutComponent, SignInComponent } from './components';
+import { HomeComponent, NavbarComponent, ContactComponent, AboutComponent, SignInComponent,ProfileComponent} from './components';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
@@ -15,7 +15,14 @@ const routes: Routes = [
   }, 
    {
     path: 'signIn', component: SignInComponent
-  }
+  },
+  
+  {
+	  path: 'profile', component: ProfileComponent
+  },
+ 
+  
+  
   // otherwise redirect to home
   // { path: '**', redirectTo: '/' }
 ];

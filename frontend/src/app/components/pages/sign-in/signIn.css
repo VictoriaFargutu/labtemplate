@@ -80,7 +80,8 @@ form{
 }
 
 .register_btn{
-    background-color: darkorange;
+    margin-top: 10px;
+    background-color: #FA8D62;
 }
 
 .control-label{

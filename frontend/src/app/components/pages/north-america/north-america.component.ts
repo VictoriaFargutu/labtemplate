@@ -16,8 +16,8 @@ img: HTMLImageElement;
   }
 
   changeImage(imageId){
-  this.img = document.getElementById(imageId) as HTMLImageElement;;
-  this.mainImage = document.getElementById('mainImage') as HTMLImageElement;;
+  this.img = document.getElementById(imageId) as HTMLImageElement;
+  this.mainImage = document.getElementById('mainImage') as HTMLImageElement;
   this.mainImage.src = this.img.src;
   }
 

@@ -25,8 +25,22 @@ app.use(cookieParser());
 // Controllers
 var index = require('./src/rest/index');
 var user = require('./src/rest/user');
+var person = require('./src/rest/person');
+var continent = require('./src/rest/continent');
+var country = require('./src/rest/country');
+var favourite = require('./src/rest/favourite');
+var image = require('./src/rest/image');
+var location = require('./src/rest/location');
+
 app.use('/api', index);
 app.use('/api/user', user);
+app.use('/api/person', person);
+app.use('/api/continent', continent);
+app.use('/api/country', country);
+app.use('/api/favourite', favourite);
+app.use('/api/image', image);
+app.use('/api/location', location);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

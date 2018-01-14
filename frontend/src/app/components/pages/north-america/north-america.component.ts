@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NorthAmericaComponent implements OnInit {
 
+mainImage: HTMLImageElement;
+img: HTMLImageElement;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  changeImage(imageId){
+  this.img = document.getElementById(imageId) as HTMLImageElement;;
+  this.mainImage = document.getElementById('mainImage') as HTMLImageElement;;
+  this.mainImage.src = this.img.src;
   }
 
 }

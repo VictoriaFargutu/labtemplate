@@ -66,6 +66,7 @@ footer {
   height: 170px;
   padding: 3px;
   position: relative;
+  cursor: pointer;
 }
 
 .imageContentBig {
@@ -93,3 +94,6 @@ footer {
   padding: 1px;
 }
 
+.fa-heart-o{
+  cursor: pointer;
+}

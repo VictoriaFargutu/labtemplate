@@ -2,67 +2,123 @@
   <div class="col-lg-3 col-md-3 col-xs-3">
     <div class="sidebar sidebar-left">
       <div class="scrollable" id="sidebar-wrapper">
-        <li class="countries aColor alignText"><a>Canada<span id="spanID" data-target="#canadaPlaces"></span></a></li>
-        <ul id="canadaPlaces" class="nav nav-tabs tabs-left aColor collapse in">
-          <li class="liTabs"><a href="#home" data-toggle="tab">Athabasca Glacier</a></li>
-          <li class="liTabs"><a href="#profile" data-toggle="tab">Crowsnest Pass</a></li>
-          <li class="liTabs"><a href="#messages" data-toggle="tab">Sandbanks Provincial Park</a></li>
-          <li class="liTabs"><a href="#settings" data-toggle="tab">Banff National Park</a></li>
+        <li class="countries aColor alignText"><a>Argentina<span id="spanID" data-target="#argentinaPlaces"></span></a></li>
+        <ul id="argentinaPlaces" class="nav nav-tabs tabs-left aColor collapse in">
+          <li class="liTabs"><a href="#IguazuFalls" data-toggle="tab">Iguazu Falls</a></li>
+          <li class="liTabs"><a href="#crowsnestPass" data-toggle="tab">Mar del Plata</a></li>
+          <li class="liTabs"><a href="#sandbanks" data-toggle="tab">Cordoba</a></li>
+          <li class="liTabs"><a href="#banffNationalPark" data-toggle="tab">Banff National Park</a></li>
         </ul>
-        <li class="countries aColor alignText" data-target="#usaPlaces"><a>USA<span data-target="#usaPlaces"></span></a></li>
-        <ul id="usaPlaces" class="nav nav-tabs tabs-left aColor collapse">
-          <li class="liTabs"><a href="#home" data-toggle="tab"> Canyonlands National Park</a></li>
-          <li class="liTabs"><a href="#profile" data-toggle="tab">Horseshoe Bend</a></li>
-          <li class="liTabs"><a href="#messages" data-toggle="tab">Upper Antelope Canyon</a></li>
-          <li class="liTabs"><a href="#settings" data-toggle="tab">Custer State Park</a></li>
+        <li class="countries aColor alignText" data-target="#brazilPlaces"><a>Brazil<span data-target="#brazilPlaces"></span></a></li>
+        <ul id="brazilPlaces" class="nav nav-tabs tabs-left aColor collapse">
+          <li class="liTabs"><a href="#canyonlands" data-toggle="tab"> Canyonlands National Park</a></li>
+          <li class="liTabs"><a href="#horseshoe" data-toggle="tab">Horseshoe Bend</a></li>
+          <li class="liTabs"><a href="#upper" data-toggle="tab">Upper Antelope Canyon</a></li>
+          <li class="liTabs"><a href="#custer" data-toggle="tab">Custer State Park</a></li>
 
         </ul>
-        <li class="countries aColor alignText"><a>Mexico<span data-target="#mexicoPlaces"></span></a></li>
-        <ul id="mexicoPlaces" class="nav nav-tabs tabs-left aColor collapse">
-          <li class="liTabs"><a href="#home" data-toggle="tab">Sima de las Cotorras</a></li>
-          <li class="liTabs"><a href="#profile" data-toggle="tab">Tamul Falls</a></li>
-          <li class="liTabs"><a href="#messages" data-toggle="tab">Cañon de la Angostura</a></li>
-          <li class="liTabs"><a href="#settings" data-toggle="tab">Grutas de Cacahuamilpan</a></li>
+        <li class="countries aColor alignText"><a>Chile<span data-target="#chilePlaces"></span></a></li>
+        <ul id="chilePlaces" class="nav nav-tabs tabs-left aColor collapse">
+          <li class="liTabs"><a href="#simaCotorras" data-toggle="tab">Sima de las Cotorras</a></li>
+          <li class="liTabs"><a href="#tamulFalls" data-toggle="tab">Tamul Falls</a></li>
+          <li class="liTabs"><a href="#angostura" data-toggle="tab">Cañon de la Angostura</a></li>
+          <li class="liTabs"><a href="#cacahuamilpan" data-toggle="tab">Grutas de Cacahuamilpan</a></li>
         </ul>
       </div>
     </div>
   </div>
   <div class="col-lg-9 col-md-9 col-xs-9 ">
     <div class="tab-content col9Style">
-      <div class="tab-pane active" id="home">
+      <div class="tab-pane active" id="IguazuFalls">
+        <div class="row">
+          <div class="col-lg-9 col-md-9 col-xs-9">
+            <div>
+              <h2><span class="fa fa-heart-o" aria-hidden="true"></span>Iguazu Falls</h2>
+            </div>
+           
+          </div>
+        </div>
         <div class="row">
           <div class="col-lg-3 col-md-3 col-xs-3 ">
-            <img class="img-responsive imageContent" src="..\..\assets\semantic\themes\default\assets\images\Asia.jpg">
+            <img id="img1" class="img-responsive imageContent" src="..\..\assets\semantic\themes\default\assets\images\southA\Argentina\4Arg.jpg" (click)="changeImage('img1', 'mainImage')">
           </div>
           <div class="col-lg-3 col-md-3 col-xs-3 ">
-            <img class="img-responsive imageContent" src="..\..\assets\semantic\themes\default\assets\images\Asia.jpg">
+            <img id="img2" class="img-responsive imageContent" src="..\..\assets\semantic\themes\default\assets\images\southA\Argentina\1Arg.jpg" (click)="changeImage('img2', 'mainImage')">
           </div>
           <div class="col-lg-3 col-md-3 col-xs-3 ">
-            <img class="img-responsive imageContent" src="..\..\assets\semantic\themes\default\assets\images\Asia.jpg">
+            <img id="img3" class="img-responsive imageContent" src="..\..\assets\semantic\themes\default\assets\images\southA\Argentina\3Arg.jpg" (click)="changeImage('img3', 'mainImage')">
             <!--   <img class="img-responsive imageContent" src="E:\Facultate\an3\WEB\images\Africa.jpg"> -->
           </div>
           <div class="col-lg-3 col-md-3 col-xs-3 ">
-            <img class="img-responsive imageContent" src="..\..\assets\semantic\themes\default\assets\images\Asia.jpg">
+            <img id="img4" class="img-responsive imageContent" src="..\..\assets\semantic\themes\default\assets\images\southA\Argentina\2Arg.jpg" (click)="changeImage('img4', 'mainImage')">
             <!--   <img class="img-responsive imageContent" src="E:\Facultate\an3\WEB\images\Africa.jpg"> -->
           </div>
         </div>
         <div class="row rowStyle">
           <div class="col-lg-9 col-md-9 col-xs-9">
-            <img class="img-responsive imageContentBig" src="..\..\assets\semantic\themes\default\assets\images\Asia.jpg">
+            <img id="mainImage" class="img-responsive imageContentBig" src="..\..\assets\semantic\themes\default\assets\images\southA\Argentina\4Arg.jpg">
             <!--   <img class="img-responsive imageContent" src="E:\Facultate\an3\WEB\images\Africa.jpg"> -->
           </div>
           <div class="col-lg-3 col-md-3 col-xs-3">
-            <img class="img-responsive imageContent" src="..\..\assets\semantic\themes\default\assets\images\Asia.jpg">
-            <img class="img-responsive imageContent" src="..\..\assets\semantic\themes\default\assets\images\Asia.jpg">
+            <img id="img5" class="img-responsive imageContent" src="..\..\assets\semantic\themes\default\assets\images\southA\Argentina\5Arg.jpg" (click)="changeImage('img5', 'mainImage')">
+            <img id="img6" class="img-responsive imageContent" src="..\..\assets\semantic\themes\default\assets\images\southA\Argentina\6Arg.jpg" (click)="changeImage('img6', 'mainImage')">
             <!--   <img class="img-responsive imageContent" src="E:\Facultate\an3\WEB\images\Africa.jpg"> -->
           </div>
         </div>
         <div class="row h3style">
           <div class="col-lg-12 col-md-12 col-xs-12">
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget pulvinar libero. Etiam ultrices interdum quam in finibus. Duis consectetur dictum mauris. Curabitur eu hendrerit purus, ac fermentum sapien. Phasellus fermentum, erat id tincidunt lacinia, urna nisi facilisis quam, vitae iaculis risus lorem quis eros. Integer non congue eros, non malesuada tortor. Sed imperdiet, dui sit amet dignissim tristique, diam nibh malesuada libero, et tincidunt sapien erat non sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Nullam porttitor justo tellus. Proin quis elementum neque. Ut congue accumsan nibh vitae blandit. Morbi in mi sed mauris vestibulum sagittis. Cras odio velit, convallis vitae libero sed, dictum imperdiet leo. Donec auctor quam at varius lobortis. Donec et sem et est tincidunt tincidunt. Ut sit amet erat orci. Nam quis ultrices diam. Praesent at diam quis eros laoreet pharetra at vitae dolor.</h3>
+            <h3>The falls divide the river into the upper and lower Iguazu. The Iguazu River rises near the city of Curitiba. For most of its course, the river flows through Brazil; however, most of the falls are on the Argentine side. Below its confluence with the San Antonio River, the Iguazu River forms the boundary between Argentina and Brazil.The magnificent spectacle of these 275 individual drops has awed tourists, locals and indigenous inhabitants for centuries. </h3>
           </div>
         </div>
       </div>
+
+
+ <div class="tab-pane" id="crowsnestPass">
+        <div class="row">
+          <div class="col-lg-9 col-md-9 col-xs-9">
+            <div>
+              <h2><span class="fa fa-heart-o" aria-hidden="true"></span>Crowsnest Pass</h2>
+            </div>
+           
+           
+            <!--   <img class="img-responsive imageContent" src="E:\Facultate\an3\WEB\images\Africa.jpg"> -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-xs-3 ">
+            <img id="2img1" class="img-responsive imageContent" src="..\..\assets\semantic\themes\default\assets\images\CrowsnestPass\1CP.jpg" (click)="changeImage('2img1', '2mainImage')">
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-3 ">
+            <img id="2img2" class="img-responsive imageContent" src="..\..\assets\semantic\themes\default\assets\images\CrowsnestPass\2CP.jpg" (click)="changeImage('2img2', '2mainImage')">
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-3 ">
+            <img id="2img3" class="img-responsive imageContent" src="..\..\assets\semantic\themes\default\assets\images\CrowsnestPass\3CP.jpg" (click)="changeImage('2img3', '2mainImage')">
+            <!--   <img class="img-responsive imageContent" src="E:\Facultate\an3\WEB\images\Africa.jpg"> -->
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-3 ">
+            <img id="2img4" class="img-responsive imageContent" src="..\..\assets\semantic\themes\default\assets\images\CrowsnestPass\4CP.jpg" (click)="changeImage('2img4', '2mainImage')">
+            <!--   <img class="img-responsive imageContent" src="E:\Facultate\an3\WEB\images\Africa.jpg"> -->
+          </div>
+        </div>
+        <div class="row rowStyle">
+          <div class="col-lg-9 col-md-9 col-xs-9">
+            <img id="2mainImage" class="img-responsive imageContentBig" src="..\..\assets\semantic\themes\default\assets\images\CrowsnestPass\1CP.jpg">
+            <!--   <img class="img-responsive imageContent" src="E:\Facultate\an3\WEB\images\Africa.jpg"> -->
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-3">
+            <img id="2img5" class="img-responsive imageContent" src="..\..\assets\semantic\themes\default\assets\images\CrowsnestPass\5CP.jpg" (click)="changeImage('2img5', '2mainImage')">
+            <img id="2img6" class="img-responsive imageContent" src="..\..\assets\semantic\themes\default\assets\images\CrowsnestPass\6CP.jpg" (click)="changeImage('2img6', '2mainImage')">
+            <!--   <img class="img-responsive imageContent" src="E:\Facultate\an3\WEB\images\Africa.jpg"> -->
+          </div>
+        </div>
+        <div class="row h3style">
+          <div class="col-lg-12 col-md-12 col-xs-12">
+            <h3>The Crowsnest Pass is a unified community of five formerly separate towns (Blairmore, Bellevue, Coleman, Hillcrest, and Frank) cradled in a narrow stretch of lush valley in Southern Alberta's Rocky Mountains.  It is an idyllic natural setting of mountains, rolling hills and winding rivers.   The natural environment nurtures a genuine mountain lifestyle.  An abundance of outdoor activities await you including snowmobiling, snowshoeing, cross country skiing, downhill skiing, hiking, mountain biking, caving, fishing and hunting. </h3>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
 </div>

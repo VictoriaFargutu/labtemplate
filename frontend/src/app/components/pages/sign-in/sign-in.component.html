@@ -8,16 +8,16 @@
                 <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
                     <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
                         <label for="username">Username</label>
-                        <input type="text" class="form-control" name="username" placeholder="John_spider" [(ngModel)]="model.username" #username="ngModel" required />
+                        <input type="text" class="form-control" name="username" placeholder="John_spider" [(ngModel)]="model.username" #logInUsername required />
                         <div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>
                     </div>
                     <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control" name="password" placeholder="*********" [(ngModel)]="model.password" #password="ngModel" required />
+                        <input type="password" class="form-control" name="password" placeholder="*********" [(ngModel)]="model.password" #logInPassword required />
                         <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
                     </div>
                     <div class="form-group">
-                        <button [disabled]="loading" class="btn btn-primary">Login</button>
+                        <button [disabled]="loading" (click)="logIn(logInUsername.value,logInPassword.value)" class="btn btn-primary">Login</button>
                         <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="
                         />
 
@@ -40,7 +40,7 @@
                     <label class="control-label" for="firstname">First Name</label>
                     <div class="controls">
 
-                        <input type="text" class="form-control" name="firstname" placeholder="John" [(ngModel)]="model.fisrtname" #firstname="ngModel" required />
+                        <input type="text" class="form-control" name="firstname" placeholder="John" [(ngModel)]="model.fisrtname" #firstname required />
                         <div *ngIf="f.submitted && !firstname.valid" class="help-block">First name is required</div>
                         
                     </div>
@@ -51,7 +51,7 @@
                         <label class="control-label"  for="lastname">Last Name</label>
                         <div class="controls">
                          
-                          <input type="text" class="form-control" name="lastname" placeholder="Doe" [(ngModel)]="model.lastname" #lastname="ngModel" required />
+                          <input type="text" class="form-control" name="lastname" placeholder="Doe" [(ngModel)]="model.lastname" #lastname required />
                           <div *ngIf="f.submitted && !lastname.valid" class="help-block">Last Name is required</div>
                           
                         </div>
@@ -62,7 +62,7 @@
                     <label class="control-label" for="username">Username</label>
                     <div class="controls">
 
-                        <input type="text" class="form-control" name="username" placeholder="John_spider" [(ngModel)]="model.username" #username="ngModel" required />
+                        <input type="text" class="form-control" name="username" placeholder="John_spider" [(ngModel)]="model.username" #username required />
                         <div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>
                         <p class="help-block">Username can contain any letters or numbers, without spaces</p>
                     </div>
@@ -72,7 +72,7 @@
                     <!-- E-mail -->
                     <label class="control-label" for="email">E-mail</label>
                     <div class="controls">
-                        <input type="text" class="form-control" name="email"placeholder="John@gmail.com" [(ngModel)]="model.email" #email="ngModel" required />
+                        <input type="text" class="form-control" name="email"placeholder="John@gmail.com" [(ngModel)]="model.email" #email required />
                         <div *ngIf="f.submitted && !email.valid" class="help-block">E-mail is required</div>
                         
                     </div>
@@ -82,7 +82,7 @@
                     <!-- Password-->
                     <label class="control-label" for="password">Password</label>
                     <div class="controls">
-                        <input type="password" class="form-control" name="password" placeholder="*********" [(ngModel)]="model.password" #password="ngModel" required />
+                        <input type="password" class="form-control" name="password" placeholder="*********" [(ngModel)]="model.password" #password required />
                         <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
                         <p class="help-block">Password should be at least 4 characters</p>
                     </div>
@@ -92,7 +92,7 @@
                     <!-- Password Confirmation -->
                     <label class="control-label" for="passwordconfirm">Password (Confirm)</label>
                     <div class="controls">
-                        <input type="password" class="form-control" name="passwordconfirm" placeholder="*********" [(ngModel)]="model.passwordconfirm" #passwordconfirm="ngModel" required
+                        <input type="password" class="form-control" name="passwordconfirm" placeholder="*********" [(ngModel)]="model.passwordconfirm" #passwordconfirm required
                         />
                         <div *ngIf="f.submitted && !passwordconfirm.valid" class="help-block">Passwords don't match</div>
                         
@@ -102,7 +102,7 @@
                 <div class="control-group">
                     <!-- Button -->
                     <div class="controls">
-                        <button class="btn btn-success register_btn">Register</button>
+                        <button class="btn btn-success register_btn"  (click)="register(firstname.value,lastname.value,username.value,email.value,password.value,passwordconfirm.value)">Register</button>
                     </div>
                 </div>
             </fieldset>

@@ -6,6 +6,6 @@ var person = require('../service/person');
  router.get('/find/:id', person.findById);
  router.post('/create', person.create);
  router.post('/update/:id', person.update);
- router.get('/delete/:id',person.delete)
+ router.delete('/delete/:id',person.delete)
 
 module.exports = router;

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../../../service/index';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-in',
@@ -16,17 +18,21 @@ export class SignInComponent implements OnInit {
   passwordconfirmation:string;
   email:string;
 
-  constructor() { }
+  constructor(private apiService: ApiService, private route: Router) { }
 
   ngOnInit() {
   }
-
-  logIn(username,password)
-  {
-     this.username = username;
-     this.password = password;
-     //alert(this.username +" "+this.password);
   
+  logIn(loginUsername, loginPassword) {
+    this.apiService.get('api/user/username_password/' + loginUsername + '&' + loginPassword).subscribe(res => {
+
+      console.log(res);
+    if(res!='404')
+    {
+      alert("Welcome "+loginUsername);
+      window.location.href = '/profile';
+    }
+    });
   }
 
   register(firstname,lastname,username,email,password,passwordconfirmation){
@@ -44,8 +50,5 @@ export class SignInComponent implements OnInit {
 
 
   }
-
-
-  
-
 }
+

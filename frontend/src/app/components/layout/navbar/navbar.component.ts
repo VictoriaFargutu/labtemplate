@@ -8,7 +8,7 @@ import { Router } from '@angular/router'
 })
 export class NavbarComponent implements OnInit {
   arrayItems: Array<string> = [];
-  
+
   constructor() {
 
        
@@ -28,5 +28,6 @@ export class NavbarComponent implements OnInit {
 
 
   }
+  
 
 }

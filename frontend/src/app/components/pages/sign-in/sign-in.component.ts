@@ -21,30 +21,24 @@ export class SignInComponent implements OnInit {
   email:string;
   user1:User;
   
-  //constructor(private apiService: ApiService) { }
 
   constructor(private apiService: ApiService, private route: Router) { }
 
   ngOnInit() {
-
-
   }
 
- // logIn(username,password)
-  //{
-
-   //  this.username = username;
-    // this.password = password;
-    //alert(this.username+this.password);
-  //}
-  
-  logIn(loginUsername, loginPassword) {
+  logIn(loginUsername, loginPassword,) {
     this.apiService.get('api/user/username_password/' + loginUsername + '&' + loginPassword).subscribe(res => {
       console.log(res);
     if(res!='404')
     {
-      alert("Welcome "+loginUsername);
       window.location.href = '/profile';
+      alert("Welcome "+loginUsername);
+    }
+
+    else if(res==null || res=='User Not Found')
+    {
+      alert("Wrong");
     }
     });
   }
@@ -60,9 +54,7 @@ export class SignInComponent implements OnInit {
     var firstName = firstname;
     var lastName = lastname;
 
-    //alert(username+password);
     
-
     this.apiService.post('api/user/createUser/',{username,password}).subscribe(res => {
       console.log(res);
     });
@@ -74,8 +66,6 @@ export class SignInComponent implements OnInit {
     });
 
     alert("V-ati inregistrat cu succes");
-
-  //alert(this.firstname+" "+this.lastname+" "+this.username_reg+" "+this.email+" "+this.password_reg+" "+ this.passwordconfirmation);
 
   }
 }

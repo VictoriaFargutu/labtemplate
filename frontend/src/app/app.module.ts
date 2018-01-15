@@ -30,6 +30,7 @@ import { AntarcticaComponent } from './components/pages/antarctica/antarctica.co
 import { SignInComponent } from './components/pages/sign-in/sign-in.component';
 import { EuropeComponent } from './components/pages/europe/europe.component';
 import { ProfileComponent } from './components/pages/profile/profile.component';
+import { FileUploaderModule } from "ng4-file-upload/file-uploader.module";
 
 import {RouterModule,Routes} from '@angular/router';
 import { FavouriteComponent } from './components/pages/favourite/favourite.component';
@@ -49,6 +50,7 @@ import { FavouriteComponent } from './components/pages/favourite/favourite.compo
     HttpModule,
     ReactiveFormsModule,
     SuiModule,
+    FileUploaderModule,
    
   ],
   providers: [

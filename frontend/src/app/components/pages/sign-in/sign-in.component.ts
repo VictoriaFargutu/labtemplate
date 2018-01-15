@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as express from 'express';
-import { ApiService } from '../../../service/';
+//import { ApiService } from '../../../service/';
 import { ApiService } from '../../../service/index';
 import { Router } from '@angular/router';
 
@@ -21,7 +21,7 @@ export class SignInComponent implements OnInit {
   email:string;
   user1:User;
   
-  constructor(private apiService: ApiService) { }
+  //constructor(private apiService: ApiService) { }
 
   constructor(private apiService: ApiService, private route: Router) { }
 
@@ -30,12 +30,13 @@ export class SignInComponent implements OnInit {
 
   }
 
-  logIn(username,password)
-  {
+ // logIn(username,password)
+  //{
 
-     this.username = username;
-     this.password = password;
+   //  this.username = username;
+    // this.password = password;
     //alert(this.username+this.password);
+  //}
   
   logIn(loginUsername, loginPassword) {
     this.apiService.get('api/user/username_password/' + loginUsername + '&' + loginPassword).subscribe(res => {

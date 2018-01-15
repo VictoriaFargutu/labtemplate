@@ -23,7 +23,7 @@ export class NavbarComponent implements OnInit {
 
   onSubmit(search){
    
-   window.location.href = '/'+search;
+   window.location.href = '/'+search.value;
   
 
 

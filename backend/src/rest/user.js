@@ -5,5 +5,6 @@ var user = require('../service/').user;
 router.get('/', user.list);
 router.get('/:id', user.findById);
 router.post('/', user.create);
+router.post('/createUser',user.createUser);
 
 module.exports = router;

@@ -21,4 +21,8 @@ img: HTMLImageElement;
   this.mainImage.src = this.img.src;
   }
 
+  addToFavourite(locationId){
+
+  }
+
 }

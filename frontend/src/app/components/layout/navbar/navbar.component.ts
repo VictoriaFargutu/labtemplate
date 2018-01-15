@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-navbar',
@@ -6,14 +7,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbarStyle.css']
 })
 export class NavbarComponent implements OnInit {
+  arrayItems: Array<string> = [];
+  
+  constructor() {
 
-  constructor() { }
+       
+   }
 
   ngOnInit() {
   }
 
   onSignIn(){
   	alert("HELLLOOOOO");
+  }
+
+  onSubmit(search){
+   
+   window.location.href = '/'+search;
+  
+
+
   }
 
 }

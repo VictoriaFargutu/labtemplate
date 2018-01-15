@@ -4,9 +4,9 @@
         	<p class="navbar-text navbar-left">Welcome to Best Locations In The World!</p>
         </div>
         <div class="input-group" style="width: 600px;">
-            <input type="text" class="form-control input-lg" placeholder="Search...">
+            <input type="text" class="form-control input-lg" placeholder="Search..." [(ngModel)]="model.search" #search  >
             <span class="input-group-btn">
-                <button class="btn btn-lg searchStyle" type="button">
+                <button class="btn btn-lg searchStyle" (click)="onSubmit(search.value)" type="button" >
                         <i class="fa fa-search"></i>
                 </button>
             </span>

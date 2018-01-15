@@ -31,7 +31,7 @@ import { SignInComponent } from './components/pages/sign-in/sign-in.component';
 import { EuropeComponent } from './components/pages/europe/europe.component';
 import { ProfileComponent } from './components/pages/profile/profile.component';
 
-
+import {RouterModule,Routes} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -48,6 +48,7 @@ import { ProfileComponent } from './components/pages/profile/profile.component';
     HttpModule,
     ReactiveFormsModule,
     SuiModule,
+   
   ],
   providers: [
     AppRoutingModule,

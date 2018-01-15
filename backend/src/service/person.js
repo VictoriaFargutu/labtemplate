@@ -43,3 +43,20 @@ exports.delete = function (req, res) {
     })
     .catch(error => res.status(400).send(error));
 };
+
+exports.createPerson = function (req, res) {
+  console.log("Voi crea un person");
+  let firstName = req.body.firstName;
+  let lastName = req.body.lastName;
+  let email = req.body.email;
+  console.log(req.body);
+    //res.jsonp(user.create(req.params.firstName,req.params.lastName,req.params.email));
+    person.create({
+      attributes:[ 'firstName', 'lastName', 'email',],
+      firstName: firstName, lastName: lastName, email: email}).then(person => {
+      console.log(person);
+      
+      res.jsonp(person);
+    });
+
+};

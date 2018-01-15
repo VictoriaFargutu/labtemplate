@@ -1,20 +1,21 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div>
-        	<p class="navbar-text navbar-left">Welcome to Best Locations In The World!</p>
+        	<p class="navbar-text navbar-left" >Welcome to Best Locations In The World</p>
         </div>
         <div class="input-group" style="width: 600px;">
-            <input type="text" class="form-control input-lg" placeholder="Search..." [(ngModel)]="model.search" #search  >
+            <input type="text" class="form-control input-lg" placeholder="Search..." [(ngModel)]="search" #search  >
             <span class="input-group-btn">
                 <button class="btn btn-lg searchStyle" (click)="onSubmit(search.value)" type="button" >
                         <i class="fa fa-search"></i>
                 </button>
             </span>
         </div>
+        
         <div>
         	<a class="active navbar-right navbar-text" title="Home page" href="/home">Home</a>
             <a class="active navbar-right navbar-text" title="Our contacts" href="/contact"> Contact</a>
             <a class="active navbar-right navbar-text" title="About us" href="/about">About</a>
-            <a class="active navbar-right navbar-text" href="/signIn"><span class="fa fa-user-circle"></span>Sign in</a>
+            <a class="active navbar-right navbar-text" href="/signIn" [(ngModel)]="autentificare"><span class="fa fa-user-circle"></span>Sign in</a>
         </div>
 </nav>

@@ -3,6 +3,7 @@ import * as express from 'express';
 //import { ApiService } from '../../../service/';
 import { ApiService } from '../../../service/index';
 import { Router } from '@angular/router';
+import * as MyGlobals from '../../../service/globals';
 
 @Component({
   selector: 'app-sign-in',
@@ -44,10 +45,23 @@ export class SignInComponent implements OnInit {
       console.log(res);
     if(res!='404')
     {
+      MyGlobals.setValue(res.id);
+     
       alert("Welcome "+loginUsername);
       window.location.href = '/profile';
+      
     }
+
+    
+   
+   
     });
+
+    
+
+
+
+    
   }
 
   register(firstname,lastname,username,email,password,passwordconfirmation){

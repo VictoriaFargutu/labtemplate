@@ -1,0 +1,877 @@
+#VRML V2.0 utf8
+# Overlapping shapes
+#calculator
+ 
+
+Shape {
+        geometry Box {
+                size 5 7.5 1
+        }
+
+        appearance Appearance {
+		material Material { diffuseColor 0 0.5 0.5}
+	}
+
+        
+}
+
+Transform {
+   # The display
+   translation 0 2.64 0.5
+   children [
+      Shape {
+         geometry Box { size 4.4 1.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.65, 0.86, 0.99 # white in RGB format
+                    
+                }
+         }
+      }
+       Transform{ translation -0.1 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "132 x 72"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+          appearance Appearance {
+                 material Material { diffuseColor 1 0 0 }
+   }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"%"
+   translation -1.8 1.3 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         
+
+           
+         
+        
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+      Transform{ translation -0.2 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "%"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+      
+
+      
+     ]
+}
+
+
+
+
+Transform {
+   # The button"radical"
+   translation -0.63 1.3 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+       Transform{ translation -0.1 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "√"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"off"
+   translation 0.56 1.3 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+       Transform{ translation -0.4 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "OFF"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"on"
+   translation 1.75 1.3 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+      Transform{ translation -0.4 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "ON/C"
+          
+           fontStyle FontStyle{ size 0.4}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"mrc"
+   translation -1.8 0.4 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+      Transform{ translation -0.4 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "MRC"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"m-"
+   translation -0.63 0.4 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+       Transform{ translation -0.2 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "M-"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"m+"
+   translation 0.56 0.4 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+       Transform{ translation -0.2 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "M+"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"ce"
+   translation 1.75 0.4 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+       Transform{ translation -0.2 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "CE"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"7"
+   translation -1.8 -0.5 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+       Transform{ translation -0.1 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "7"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"8"
+   translation -0.63 -0.5 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+       Transform{ translation -0.1 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "8"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"9"
+   translation 0.56 -0.5 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+       Transform{ translation -0.1 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "9"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"/"
+   translation 1.75 -0.5 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+       Transform{ translation -0.1 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "÷"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"4"
+   translation -1.8 -1.4 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+      Transform{ translation -0.1 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "4"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"5"
+   translation -0.63 -1.4 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+      Transform{ translation -0.1 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "5"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"6"
+   translation 0.56 -1.4 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+      Transform{ translation -0.1 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "6"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"x"
+   translation 1.75 -1.4 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+      Transform{ translation -0.1 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "x"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"1"
+   translation -1.8 -2.3 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+       Transform{ translation -0.1 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "1"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"2"
+   translation -0.63 -2.3 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+       Transform{ translation -0.1 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "2"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"3"
+   translation 0.56 -2.3 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+       Transform{ translation -0.1 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "3"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"-"
+   translation 1.75 -2.3 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+       Transform{ translation -0.1 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "-"
+          
+           fontStyle FontStyle{ size 0.6}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"0"
+   translation -1.8 -3.2 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+       Transform{ translation -0.1 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "0"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"."
+   translation -0.63 -3.2 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+       Transform{ translation -0.1 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "."
+          
+           fontStyle FontStyle{ size 0.8}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"="
+   translation 0.56 -3.2 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+       Transform{ translation -0.1 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "="
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}
+
+Transform {
+   # The button"+"
+   translation 1.75 -3.2 0.5
+   children [
+      Shape {
+         geometry Box { size 0.9 0.7 0.3 }
+         appearance Appearance {
+             material Material {
+                    diffuseColor 0.5 0 0.5 # purple in RGB format
+                    
+                }
+         }
+      }
+
+       Transform{ translation -0.1 -0.2 0.2
+      children[
+
+          Shape{
+          
+          geometry Text{ string "+"
+          
+           fontStyle FontStyle{ size 0.5}
+          }
+
+           }
+                
+          ] 
+     
+   
+          
+      }
+     ]
+}

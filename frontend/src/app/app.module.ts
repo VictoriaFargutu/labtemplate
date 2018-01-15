@@ -32,13 +32,14 @@ import { EuropeComponent } from './components/pages/europe/europe.component';
 import { ProfileComponent } from './components/pages/profile/profile.component';
 
 import {RouterModule,Routes} from '@angular/router';
+import { FavouriteComponent } from './components/pages/favourite/favourite.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent, 
-	ContactComponent, NorthAmericaComponent, SouthAmericaComponent, AfricaComponent, AustraliaComponent, AboutComponent, AsiaComponent, AntarcticaComponent, SignInComponent, EuropeComponent, ProfileComponent ],
+	ContactComponent, NorthAmericaComponent, SouthAmericaComponent, AfricaComponent, AustraliaComponent, AboutComponent, AsiaComponent, AntarcticaComponent, SignInComponent, EuropeComponent, ProfileComponent, FavouriteComponent ],
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,

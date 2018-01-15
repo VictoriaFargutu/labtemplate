@@ -10,6 +10,8 @@ export class EuropeComponent implements OnInit {
 mainImage: HTMLImageElement;
 img: HTMLImageElement;
 
+
+
   constructor() { }
 
   ngOnInit() {
@@ -22,6 +24,9 @@ img: HTMLImageElement;
   }
 
   addToFavourite(locationId){
+
+ 
+ 
 
   }
 

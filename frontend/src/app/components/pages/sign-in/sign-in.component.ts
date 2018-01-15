@@ -40,7 +40,6 @@ export class SignInComponent implements OnInit {
   
   logIn(loginUsername, loginPassword) {
     this.apiService.get('api/user/username_password/' + loginUsername + '&' + loginPassword).subscribe(res => {
-
       console.log(res);
     if(res!='404')
     {

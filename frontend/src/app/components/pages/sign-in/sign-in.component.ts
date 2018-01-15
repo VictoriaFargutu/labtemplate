@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import * as express from 'express';
 import { ApiService } from '../../../service/';
-
+import { ApiService } from '../../../service/index';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-in',
@@ -20,9 +21,9 @@ export class SignInComponent implements OnInit {
   email:string;
   user1:User;
   
-
-
   constructor(private apiService: ApiService) { }
+
+  constructor(private apiService: ApiService, private route: Router) { }
 
   ngOnInit() {
 
@@ -36,11 +37,16 @@ export class SignInComponent implements OnInit {
      this.password = password;
     //alert(this.username+this.password);
   
+  logIn(loginUsername, loginPassword) {
+    this.apiService.get('api/user/username_password/' + loginUsername + '&' + loginPassword).subscribe(res => {
 
-   
-
-    
-  
+      console.log(res);
+    if(res!='404')
+    {
+      alert("Welcome "+loginUsername);
+      window.location.href = '/profile';
+    }
+    });
   }
 
   register(firstname,lastname,username,email,password,passwordconfirmation){
@@ -69,19 +75,9 @@ export class SignInComponent implements OnInit {
 
     alert("V-ati inregistrat cu succes");
 
-
-    
-
-
   //alert(this.firstname+" "+this.lastname+" "+this.username_reg+" "+this.email+" "+this.password_reg+" "+ this.passwordconfirmation);
 
-
-
   }
-
-
-  
-
 }
 
 interface User{

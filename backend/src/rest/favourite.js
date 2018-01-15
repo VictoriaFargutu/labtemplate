@@ -6,6 +6,6 @@ var favourite = require('../service/favourite');
  router.get('/find/:id', favourite.findById);
  router.post('/create', favourite.create);
  router.post('/update/:id', favourite.update);
- router.get('/delete/:id',favourite.delete)
+ router.delete('/delete/:id',favourite.delete)
 
 module.exports = router;

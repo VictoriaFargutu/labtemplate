@@ -6,6 +6,6 @@ var country = require('../service/country');
  router.get('/find/:id', country.findById);
  router.post('/create', country.create);
  router.post('/update/:id', country.update);
- router.get('/delete/:id',country.delete)
+ router.delete('/delete/:id',country.delete)
 
 module.exports = router;

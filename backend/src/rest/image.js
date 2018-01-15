@@ -6,6 +6,6 @@ var image = require('../service/image');
  router.get('/find/:id', image.findById);
  router.post('/create', image.create);
  router.post('/update/:id', image.update);
- router.get('/delete/:id',image.delete)
+ router.delete('/delete/:id',image.delete)
 
 module.exports = router;

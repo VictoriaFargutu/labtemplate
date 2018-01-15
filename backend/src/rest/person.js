@@ -8,5 +8,6 @@ var person = require('../service/person');
  router.post('/update/:id', person.update);
  router.get('/delete/:id',person.delete);
  router.post('/createPerson',person.createPerson);
+ 
 
 module.exports = router;

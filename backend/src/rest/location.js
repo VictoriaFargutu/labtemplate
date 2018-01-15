@@ -6,6 +6,6 @@ var location = require('../service/location');
  router.get('/find/:id', location.findById);
  router.post('/create', location.create);
  router.post('/update/:id', location.update);
- router.get('/delete/:id',location.delete)
+ router.delete('/delete/:id',location.delete)
 
 module.exports = router;
